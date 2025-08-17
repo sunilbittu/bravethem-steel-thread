@@ -1,20 +1,22 @@
-# BraveThem — Steel Thread (V0.1)
+# BraveThem — Steel Thread (V0.2 PWA)
 
-An iconic, calm command center for work & home. This starter includes:
+An iconic, calm command center for work & home.
+
+## What’s in this build
 - Today page with Single Focus, Tasks (3 active), Focus Timer (25:00), Peace Meter
-- Local persistence (localStorage)
 - Quick Capture (Cmd/Ctrl + K)
-- Next.js App Router + Tailwind
+- **PWA (Step 1)**: `manifest.webmanifest`, service worker with offline fallback (`/offline.html`), installable
 
-## Getting Started
-
+## Run locally
 ```bash
 npm install
 npm run dev
 ```
-
 Open http://localhost:3000
 
-## Notes
-- PWA/offline Service Worker will be added next.
-- Data currently stores in your browser's localStorage.
+## Deploy
+Push to your GitHub repo (main branch) and let Vercel build & deploy.
+
+## PWA notes
+- Install via browser menu (“Install BraveThem”)
+- Works offline; navigation requests fall back to `/offline.html`
