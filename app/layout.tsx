@@ -1,10 +1,13 @@
 import "./../styles/globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import RegisterSW from "../components/RegisterSW";
 
 export const metadata: Metadata = {
   title: "BraveThem — Steel Thread",
   description: "Calm command center for work & home",
+};
+
+export const viewport: Viewport = {
   themeColor: "#0B0B0C",
 };
 
